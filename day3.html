@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My First Styled Webpage</title>
+ <style>
+   body {
+      font-family: 'Arial', 'Times New Roman', sans-serif;
+      background: linear-gradient(270deg, #ffecd2, #fcb69f, #ffdde1, #a1c4fd, #c2e9fb);
+      background-size: 1000% 1000%;
+      margin: 0;
+      padding: 0;
+      text-align: center;
+      animation: gradientFlow 18s ease infinite, fadeIn 2s ease-in;
+    }
+
+    @keyframes gradientFlow {
+      0% { background-position: 0% 50%; }
+      50% { background-position: 100% 50%; }
+      100% { background-position: 0% 50%; }
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    @keyframes float {
+      0% { transform: translateY(0); }
+      50% { transform: translateY(-10px); }
+      100% { transform: translateY(0); }
+    }
+
+    @keyframes glow {
+      0% { box-shadow: 0 0 5px #fff, 0 0 10px #ff6f91; }
+      100% { box-shadow: 0 0 20px #ffb6c1, 0 0 30px #ff9aa2; }
+    }
+
+  
+    header {
+      border: 3px solid #ff69b4;
+      padding: 10px;
+      border-radius: 15px;
+      margin: 20px;
+      background: linear-gradient(to right, #a1c4fd, #c2e9fb);
+      box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+      animation: fadeIn 1.5s ease-in;
+    }
+
+  
+    nav a {
+      margin: 0 10px;
+      text-decoration: none;
+      color: #ff1493;
+      font-weight: bold;
+      transition: 0.3s;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+      color: #ff6f91;
+    }
+
+   
+    img {
+      width: 400px;
+      border-radius: 50%;
+      box-shadow: 0 0 25px rgba(255, 105, 180, 0.5);
+      margin: 20px 0;
+      border: 5px solid #ffb6c1;
+      animation: float 4s ease-in-out infinite, fadeIn 2s ease-in;
+    }
+
+ 
+    table {
+      margin: 0 auto;
+      border: 3px solid #ffb6c1;
+      border-collapse: collapse;
+      width: 60%;
+      text-align: center;
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow: 0 0 10px rgba(255, 192, 203, 0.6);
+      animation: fadeIn 2.5s ease-in;
+    }
+
+    th {
+      background-color: #ffd6e0;
+      color: #d63384;
+      padding: 12px;
+      font-size: 18px;
+    }
+
+    td {
+      border: 2px solid #ff99c8;
+      padding: 10px;
+      color: #444;
+      font-weight: bold;
+    }
+
+    tr:nth-child(even) {
+      background-color: #fce1f3;
+    }
+
+    tr:nth-child(odd) {
+      background-color: #fff0f5;
+    }
+
+   
+    button {
+      background-color: #ffb6c1;
+      color: white;
+      border: none;
+      padding: 12px 25px;
+      margin: 20px;
+      cursor: pointer;
+      border-radius: 20px;
+      font-weight: bold;
+      font-size: 16px;
+      transition: 0.3s;
+      box-shadow: 0 0 10px rgba(255, 182, 193, 0.6);
+      animation: fadeIn 3s ease-in;
+    }
+
+    button:hover {
+      background-color: #ff6f91;
+      animation: glow 1s infinite alternate;
+      transform: scale(1.08);
+    }
+
+   
+    p {
+      text-align: justify;
+      color: #555;
+      border: 2px solid #ffb6c1;
+      background-color: #fff7fb;
+      width: 70%;
+      margin: 20px auto;
+      padding: 15px;
+      border-radius: 10px;
+      box-shadow: 0 0 8px rgba(255, 182, 193, 0.6);
+      font-size: 16px;
+      animation: fadeIn 3.5s ease-in;
+    }
+
+ 
+    form {
+      margin: 20px;
+      background-color: #fdf1f5;
+      border: 2px dashed #ffb6c1;
+      padding: 15px;
+      width: 50%;
+      margin-left: auto;
+      margin-right: auto;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(255, 182, 193, 0.6);
+      animation: fadeIn 4s ease-in;
+    }
+
+    input {
+      margin: 5px;
+      padding: 7px;
+      border-radius: 8px;
+      border: 1px solid #ff9aa2;
+      outline: none;
+    }
+
+    input[type="submit"] {
+      background-color: #ff8fab;
+      color: white;
+      border: none;
+      cursor: pointer;
+      padding: 8px 15px;
+      border-radius: 8px;
+      transition: 0.3s;
+    }
+
+    input[type="submit"]:hover {
+      background-color: #ff6f91;
+      animation: glow 1s infinite alternate;
+    }
+
+    footer {
+      background-color: #444;
+      color: white;
+      padding: 12px;
+      font-size: 14px;
+      text-align: center;
+      margin-top: 20px;
+      border-radius: 0 0 15px 15px;
+      animation: fadeIn 4.5s ease-in;
+    }
+  </style>
+</head>
+
+<body>
+ 
+  <header>
+    <h1 style="background-color: lightyellow; color: darkblue; font-size: 40px;">🌸 Welcome To My Webpage 🌸</h1>
+    <h2 style="color: #008000; font-weight: bold; font-size: 28px;">Learning Web Development 💻</h2>
+
+    <nav>
+      <a href="#">🏠 Home</a> |
+      <a href="#">💡 About</a> |
+      <a href="#">📩 Contact</a>
+    </nav>
+  </header>
+
+ 
+  <img src="https://img.freepik.com/free-photo/y2k-website-window-illustration_23-2151874925.jpg?semt=ais_hybrid&w=740&q=80" alt="Cute Web Image">
+
+  
+  <table>
+    <tr>
+      <th>Service</th>
+      <th>Details</th>
+    </tr>
+    <tr>
+      <td>🌷 Web Design</td>
+      <td>Creative and responsive layouts</td>
+    </tr>
+    <tr>
+      <td>🎨 Frontend</td>
+      <td>HTML, CSS, and JavaScript practice</td>
+    </tr>
+    <tr>
+      <td>📚 Learning</td>
+      <td>Fun and interactive coding lessons</td>
+    </tr>
+  </table>
+
+ 
+  <button>✨ Learn More ✨</button>
+
+  <p>
+    This is my first colorful styled webpage created using HTML and CSS. 🌈
+    I used both inline and internal styling to make it look bright and lively.
+    The goal was to create a fun, beginner-friendly layout with soft colors,
+    rounded corners, shadows, and smooth animations that bring everything to life! 💖
+  </p>
+
+ 
+  <form>
+    <h3 style="color:#d63384;">💌 Get in Touch</h3>
+    <label for="name">Name:</label>
+    <input type="text" id="name" placeholder="Enter your name" required /><br />
+    <label for="email">Email:</label>
+    <input type="email" id="email" placeholder="Enter your email" required /><br />
+    <input type="submit" value="Submit" />
+  </form>
+
+ 
+  <footer>
+    © 2025 My First Styled Webpage | Made with 💖 and pastel dreams 🌸
+  </footer>
+</body>
+</html>

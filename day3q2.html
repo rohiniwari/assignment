@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Company Launch Invitation</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(135deg, #ffe6f0, #e6f7ff);
+      color: #333;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    .card {
+      background: rgba(255, 255, 255, 0.9);
+      border: 3px solid #ffb6c1;
+      border-radius: 25px;
+      width: 600px;
+      padding: 40px 30px;
+      text-align: center;
+      position: relative;
+      overflow: hidden;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+      animation: fadeIn 1.5s ease-out;
+    }
+
+    h2 {
+      font-size: 32px;
+      margin: 20px 0 10px;
+      color: #ff69b4;
+      text-transform: uppercase;
+      text-shadow: 0 0 8px #ff69b4;
+    }
+    .logo {
+      width: 100px;
+      margin: 0 auto 15px;
+      display: block;
+      border: 2px solid #ff69b4;
+      border-radius: 50%;
+      padding: 10px;
+      background: #fff;
+      box-shadow: 0 0 10px rgba(255,105,180,0.5);
+    }
+    p {
+      font-size: 16px;
+      line-height: 1.6;
+      margin: 10px 0;
+      color: #555;
+    }
+    .details {
+      background: linear-gradient(135deg, #ffe6f0, #f0e6ff);
+      border: 1px dashed #ffb6c1;
+      border-radius: 20px;
+      padding: 25px;
+      margin: 30px auto;
+      width: 85%;
+      text-align: left;
+      color: #555;
+      box-shadow: inset 0 0 10px rgba(255,182,193,0.2);
+    }
+    .details p {
+      margin: 8px 0;
+    }
+    .highlight {
+      color: #ff69b4;
+      font-weight: bold;
+    }
+    .btn {
+      background: linear-gradient(90deg, #ffb6c1, #ff69b4);
+      border: none;
+      color: #fff;
+      padding: 14px 32px;
+      font-size: 17px;
+      border-radius: 30px;
+      cursor: pointer;
+      margin-top: 20px;
+      box-shadow: 0 0 15px rgba(255,182,193,0.6);
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+    .btn:hover {
+      transform: scale(1.05);
+      box-shadow: 0 0 25px rgba(255,182,193,0.9);
+    }
+    .btn:active {
+      transform: scale(0.98);
+    }
+    footer {
+      margin-top: 30px;
+      font-size: 14px;
+      color: #aaa;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="card">
+
+    <img src="https://www.paperlesspost.com/blog/wp-content/uploads/122123_Blog_SEOLaunchPartyIdeas_04.png" alt="Company Logo" class="logo">
+
+    <h2>Grand Launch Night</h2>
+    <p>We are excited to invite you to the launch of <strong>BluePeak Technologies Pvt. Ltd.</strong> under a canopy of lights and celebration.</p>
+
+    <div class="details">
+      <p><span class="highlight">📅 Date:</span> 25th November 2025</p>
+      <p><span class="highlight">⏰ Time:</span> 7:00 PM onwards</p>
+      <p><span class="highlight">📍 Venue:</span> Skyline Convention Center, Ranchi</p>
+    </div>
+
+    <p>Join us for an evening of inspiration, innovation, and luminous beginnings. Let’s shine bright together.</p>
+
+    <button class="btn">💖 Reserve Your Spot 💖</button>
+
+    <footer>
+      <p>BluePeak Technologies Pvt. Ltd. | Illuminating the Future</p>
+    </footer>
+
+  </div>
+
+</body>
+</html>
