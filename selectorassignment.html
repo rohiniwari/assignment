@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Cute Navbar 💕</title>
+  <style>
+    /* 🌷 Universal Selector */
+    * {
+      font-family: "Poppins", sans-serif;
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    /* 💖 Header Section */
+    #header {
+      background: linear-gradient(90deg, #ffe6f2, #e6f3ff, #fff0f5);
+      padding: 18px 40px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+      animation: fadeSlide 1s ease-out;
+      border-radius: 0 0 20px 20px;
+    }
+
+    /* 🌈 Logo Styling */
+    .logo {
+      font-size: 26px;
+      font-weight: 700;
+      color: #6a4eff;
+      letter-spacing: 1px;
+    }
+
+    .logo span {
+      color: #ff4f81;
+    }
+
+    /* 🎀 Navigation Links */
+    nav {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+    }
+
+    .nav-link {
+      text-decoration: none;
+      color: #555;
+      font-size: 18px;
+      position: relative;
+      transition: all 0.3s ease;
+      padding: 4px 6px;
+    }
+
+    /* ✨ Hover effect */
+    .nav-link:hover {
+      color: #ff4f81;
+      transform: scale(1.05);
+    }
+
+    /* 🌸 Underline animation */
+    .nav-link::after {
+      content: "";
+      position: absolute;
+      left: 0;
+      bottom: -4px;
+      width: 0%;
+      height: 2px;
+      background-color: #ff4f81;
+      transition: width 0.3s ease;
+    }
+
+    .nav-link:hover::after {
+      width: 100%;
+    }
+
+    /* 💎 First link styled differently */
+    .nav-link:first-child {
+      color: #6a4eff;
+      font-weight: 600;
+    }
+
+    /* 🌼 Animation for navbar entry */
+    @keyframes fadeSlide {
+      from {
+        opacity: 0;
+        transform: translateY(-20px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+  </style>
+</head>
+<body>
+  <header id="header">
+    <div class="logo">Be<span>blog</span></div>
+    <nav>
+      <a href="#" class="nav-link">Home</a>
+      <a href="#" class="nav-link">Web Design</a>
+      <a href="#" class="nav-link">WordPress</a>
+      <a href="#" class="nav-link">About Us</a>
+      <a href="#" class="nav-link">BeAdvice</a>
+      <a href="#" class="nav-link">Buy BeTheme</a>
+    </nav>
+  </header>
+</body>
+</html>

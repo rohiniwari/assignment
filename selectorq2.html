@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Selector Challenge 🌈</title>
+
+  
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500;700&family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+
+  <style>
+    
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      background: linear-gradient(180deg, #fff6fa, #f6faff, #fffaf2);
+      color: #444;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 50px 0;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    
+    .section {
+      width: 80%;
+      max-width: 720px;
+      background-color: #ffffff;
+      margin: 18px 0;
+      padding: 25px 30px;
+      border-radius: 22px;
+      border: 2px solid #f2d9f7;
+      box-shadow: 0 4px 12px rgba(255, 182, 193, 0.25);
+      transition: all 0.4s ease;
+      animation: fadeSlide 0.7s ease;
+    }
+
+   
+    .section:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 8px 20px rgba(189, 154, 255, 0.25);
+    }
+
+    
+    .section:first-child {
+      background-color: #e4f8f6;
+      border-color: #b8e2db;
+    }
+
+    
+    .highlight {
+      background-color: #ede4fa;
+      border-color: #d7c8f0;
+    }
+
+   
+    .soft {
+      background-color: #ffe6ef;
+      border-color: #f5c7d5;
+    }
+
+  
+    h3 {
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      font-size: 13px;
+      color: #777;
+      margin-bottom: 12px;
+    }
+
+    
+    h2 {
+      font-family: 'Dancing Script', cursive;
+      font-size: 32px;
+      font-weight: 600;
+      line-height: 1.5;
+      color: #3b2d2e;
+      letter-spacing: 0.5px;
+    }
+
+    h2 span {
+      color: #b86fc7;
+      font-weight: 700;
+      text-shadow: 1px 1px 2px rgba(183, 120, 255, 0.2);
+    }
+
+   
+    @keyframes fadeSlide {
+      from {
+        opacity: 0;
+        transform: translateY(15px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+  </style>
+</head>
+<body>
+  
+  <div class="section">
+    <h3>Everyone Needs Infinite Dreams</h3>
+    <h2><span>Enid</span> is an amplification studio that builds brands that <span>resound</span>.</h2>
+  </div>
+
+ 
+  <div class="section highlight">
+    <h3>Each New Idea Defined</h3>
+    <h2>We stand firm on our <span>values</span> that sit central to <span>everything</span> we do.</h2>
+  </div>
+
+  
+  <div class="section soft">
+    <h3>Every Note Is Distinct</h3>
+    <h2>We <span>deep-dive</span> into your back catalogue to understand the <span>beat</span>.</h2>
+  </div>
+</body>
+</html>

@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Masai Course Cards</title>
+  <style>
+    
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+    }
+
+    body {
+      background-color: #f9f9fb;
+      padding: 50px;
+      text-align: center;
+    }
+
+    
+    h1 {
+      font-size: 30px;
+      font-weight: bold;
+      color: #222;
+      margin-bottom: 40px;
+    }
+
+   
+    .courses {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 25px;
+      margin-bottom: 50px;
+    }
+
+    
+    .card {
+      width: 300px;
+      height: 280px;
+      background-color: #ffffff;
+      border-radius: 15px;
+      padding: 25px;
+      border: 1px solid #eee;
+      box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+      transition: background-color 0.4s ease, color 0.3s ease;
+      text-align: left;
+    }
+
+    
+    .card:hover {
+      background-color: #ff4155;
+      color: #fff;
+    }
+
+  
+    .icon {
+      font-size: 28px;
+      margin-bottom: 10px;
+      color: #ff4155;
+    }
+
+    .card:hover .icon {
+      color: #fff;
+    }
+
+    
+    .card h3 {
+      font-size: 14px;
+      color: #555;
+      margin-bottom: 8px;
+    }
+
+    .card:hover h3 {
+      color: #fff;
+    }
+
+    .card h2 {
+      font-size: 18px;
+      color: #222;
+      margin-bottom: 12px;
+      line-height: 1.3;
+    }
+
+    .card:hover h2 {
+      color: #fff;
+    }
+
+    .card p {
+      font-size: 14px;
+      color: #555;
+      margin-bottom: 4px;
+    }
+
+    .card:hover p {
+      color: #fff;
+    }
+
+    .btn1, .btn2 {
+      display: inline-block;
+      padding: 8px 15px;
+      font-size: 13px;
+      border-radius: 20px;
+      text-decoration: none;
+      margin-right: 10px;
+      margin-top: 15px;
+      border: 1.5px solid #ff4155;
+      color: #ff4155;
+      transition: all 0.3s ease;
+    }
+
+    .btn1:hover, .btn2:hover {
+      background-color: #ff4155;
+      color: #fff;
+    }
+
+  
+    .card:hover .btn1,
+    .card:hover .btn2 {
+      background-color: #fff;
+      color: #ff4155;
+      border-color: #fff;
+    }
+
+    
+    .featured {
+      background-color: #ff4155;
+      color: #fff;
+    }
+
+    .featured .icon,
+    .featured h3,
+    .featured h2,
+    .featured p {
+      color: #fff;
+    }
+
+    .featured .btn1,
+    .featured .btn2 {
+      background-color: #fff;
+      color: #ff4155;
+      border-color: #fff;
+    }
+
+  
+    .featured:hover {
+      background-color: #ffffff;
+      color: #000;
+    }
+
+    .featured:hover .icon,
+    .featured:hover h3,
+    .featured:hover h2,
+    .featured:hover p {
+      color: #222;
+    }
+
+    .featured:hover .btn1,
+    .featured:hover .btn2 {
+      border-color: #ff4155;
+      color: #ff4155;
+      background-color: transparent;
+    }
+
+   
+    footer {
+      background-color: #ff4155;
+      color: #fff;
+      padding: 15px 0;
+      font-size: 15px;
+      letter-spacing: 0.5px;
+      border-radius: 10px;
+      width: 80%;
+      margin: 0 auto;
+      box-shadow: 0 3px 10px rgba(0, 0, 0, 0.15);
+      transition: all 0.4s ease;
+    }
+
+    footer span {
+      font-weight: bold;
+    }
+
+   
+    footer:hover {
+      text-shadow: 0 0 10px #ffffff, 0 0 15px #ffeaea;
+      box-shadow: 0 4px 15px rgba(255, 65, 85, 0.6);
+      transform: scale(1.02);
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Masai Courses 🚀</h1>
+
+  <div class="courses">
+   
+    <div class="card">
+      <div class="icon">🎓</div>
+      <h3>IIM Sirmaur</h3>
+      <h2>EDGE: Essentials of Data Analytics, Gen AI & Execution</h2>
+      <p>06 months | Online</p>
+      <p>Qualifier test - 12th Nov 2025</p>
+      <a href="#" class="btn1">Learn more →</a>
+      <a href="#" class="btn2">Brochure →</a>
+    </div>
+
+    <div class="card featured">
+      <div class="icon">💡</div>
+      <h3>Vishlesan i-Hub IIT Patna</h3>
+      <h2>Certification Program in Data Analytics with Gen & Agentic AI</h2>
+      <p>06 months | Online</p>
+      <p>Qualifier test - 9th Nov 2025</p>
+      <a href="#" class="btn1">Learn more →</a>
+      <a href="#" class="btn2">Brochure →</a>
+    </div>
+
+    <div class="card">
+      <div class="icon">📊</div>
+      <h3>Vishlesan i-Hub IIT Patna</h3>
+      <h2>Product Management and Agentic AI</h2>
+      <p>06 months | Online</p>
+      <p>Qualifier test - 12th Nov 2025</p>
+      <a href="#" class="btn1">Learn more →</a>
+      <a href="#" class="btn2">Brochure →</a>
+    </div>
+
+   
+    <div class="card">
+      <div class="icon">🎯</div>
+      <h3>IIM Trichy</h3>
+      <h2>Product Management in the Agentic AI Era</h2>
+      <p>06 months | Online</p>
+      <p>Qualifier test - 12th Nov 2025</p>
+      <a href="#" class="btn1">Learn more →</a>
+      <a href="#" class="btn2">Brochure →</a>
+    </div>
+
+    <div class="card">
+      <div class="icon">🚀</div>
+      <h3>iHUB DivyaSampark IIT Roorkee</h3>
+      <h2>Future-Ready Product Management with Applied AI Program</h2>
+      <p>06 months | Online</p>
+      <p>Qualifier test - 12th Nov 2025</p>
+      <a href="#" class="btn1">Learn more →</a>
+      <a href="#" class="btn2">Brochure →</a>
+    </div>
+
+    <div class="card">
+      <div class="icon">🏫</div>
+      <h3>NMIMS CODE</h3>
+      <h2>Online MBA</h2>
+      <p>02 Years | Online</p>
+      <p>Qualifier test - 12th Nov 2025</p>
+      <a href="#" class="btn1">Learn more →</a>
+      <a href="#" class="btn2">Brochure →</a>
+    </div>
+  </div>
+
+  
+  <footer>
+    © 2025 <span>Masai School</span> — Thank you for visiting ❤️
+  </footer>
+
+</body>
+</html>
